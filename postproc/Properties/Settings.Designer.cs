@@ -25,7 +25,7 @@ namespace postproc.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://dtvapi.local")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://dtvapi.local/api.php")]
         public string URL {
             get {
                 return ((string)(this["URL"]));

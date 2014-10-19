@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="URL" Type="System.String" Scope="User">
-      <Value Profile="(Default)">http://dtvapi.local</Value>
+      <Value Profile="(Default)">http://dtvapi.local/api.php</Value>
     </Setting>
     <Setting Name="ServiceFile" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
