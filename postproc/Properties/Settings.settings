@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="postproc.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://dtvapi.local</Value>
+    </Setting>
+    <Setting Name="ServiceFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Method" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PUT</Value>
+    </Setting>
+    <Setting Name="NetworkType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DVB-S</Value>
+    </Setting>
+    <Setting Name="ContentType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">application/json</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
