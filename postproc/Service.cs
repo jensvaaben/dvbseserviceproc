@@ -64,6 +64,8 @@ namespace postproc
         int pid = -1;
         [DataMember]
         List<CA> ca_list = new List<CA>();
+        [DataMember]
+        string application_name = "";
 
         public int Type
         {
@@ -107,6 +109,17 @@ namespace postproc
             set
             {
                 this.ca_list = value;
+            }
+        }
+        public string ApplicationName
+        {
+            get
+            {
+                return this.application_name;
+            }
+            set
+            {
+                this.application_name = value;
             }
         }
     }

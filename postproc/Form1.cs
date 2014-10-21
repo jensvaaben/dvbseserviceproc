@@ -183,6 +183,11 @@ namespace postproc
             s.Type2 = l.Attributes["type2"].Value;
             s.Pid = Convert.ToInt32(l.Attributes["pid"].Value);
 
+            if (l.Attributes["application_name"] != null)
+            {
+                s.ApplicationName = l.Attributes["application_name"].Value;
+            }
+
             foreach (var item in l["ca_list"].ChildNodes)
             {
                 CA ca = new CA();
