@@ -174,7 +174,23 @@ namespace postproc
             ca.Pid = Convert.ToInt32(l.Attributes["CA_PID"].Value);
             ca.SystemId = Convert.ToInt32(l.Attributes["CA_system_ID"].Value);
 
-            //TODO: ca private_bytes
+            if (l.Attributes["private_bytes"].Value != string.Empty)
+            {
+                ca.PrivateBytes = ExtractBytes(l.Attributes["private_bytes"].Value);
+            }
+        }
+
+        private byte[] ExtractBytes(string s)
+        {
+            if (s.Length % 2 != 0) throw new Exception("hex string must be even number of bytes");
+            byte[] val = new byte[s.Length / 2];
+            for (int n = 0; n < s.Length / 2; n++)
+            {
+                string hexbyte = s.Substring(n*2,2);
+                val[n] = byte.Parse(hexbyte,System.Globalization.NumberStyles.HexNumber);
+            }
+
+            return val;
         }
 
         private void ExtractStream(XmlNode l, Stream s)
